@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/scrolling_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/t" />
+
+    <LinearLayout
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        app:layout_behavior="com.hzm.cos.SearchTwoBehavior"
+        android:layout_height="@dimen/edit_search_height"
+        android:scaleX="0.8"
+        android:translationY="@dimen/edit_default_transy"
+        android:background="@color/colorAccent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:textColor="#90000000"
+            android:text="搜索关键字" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="com.hzm.cos.SearchBehavior"
+        >
+        <TextView
+
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/large_text"
+            />
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+

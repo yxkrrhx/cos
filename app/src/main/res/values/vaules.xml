@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height" > 200dp</dimen>
+    <dimen name="edit_search_height" > 40dp</dimen>
+    <dimen name="edit_default_transy" > 100dp</dimen>
+    <dimen name="bar_height">50dp</dimen>
+    <dimen name="status_div">50dp</dimen>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android:android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout_height="match_parent"
+    layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_behavior="com.hzm.cos.AlphaBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:scaleType="fitXY"
+        android:src="@mipmap/t"
+        />
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/cover_header_behavior"
+        >
+        <TextView
+
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/large_text"
+            />
+    </android.support.v4.widget.NestedScrollView>
+</android:android.support.design.widget.CoordinatorLayout>
